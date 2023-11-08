@@ -1,14 +1,15 @@
 ﻿using ConceptsPOO;
 
-Console.WriteLine("POO Fundamentals");
-Console.WriteLine("================");
-
-try
+Employee employee = new HourlyEmployee()
 {
-    Console.WriteLine(new Date(2024, 2, 29));
-}
-catch (Exception error)
-{
+    Id = 1,
+    BirthDate = new Date(1989, 04, 19),
+    FirstName = "Juan",
+    LastName = "Valdes",
+    HiringDate = new Date(2010, 10, 02),
+    IsActive = true,
+    Hours = 50,
+    HourValue = 10400
+};
 
-    Console.WriteLine(error.Message);
-}
+Console.Write(employee);
