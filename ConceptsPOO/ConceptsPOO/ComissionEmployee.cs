@@ -20,7 +20,7 @@ namespace ConceptsPOO
             return $"{base.ToString()}" +
                 $"\n\tCommision percentaje: {$"{ComissionPercentaje:P2}",18}" +
                 $"\n\tSales...............: {$"{Sales:C2}",18}" +
-                $"\n\tValue to pay........: {$"{GetValueToPay}",18}";
+                $"\n\tValue to pay........: {$"{GetValueToPay():C2}",18}";
         }
     }
 }
